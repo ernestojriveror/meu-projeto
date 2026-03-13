@@ -1,0 +1,37 @@
+// mensaje.js
+// Archivo fuente creado a partir del escrito del usuario
+
+// Objeto que representa el proyecto personal
+const proyectoPersonal = {
+    profesion: "Programador de sistemas",
+    pais: "Brasil",
+    mensaje: `
+Este es mi nuevo proyecto de programador de sistema en Brasil.
+Sé que voy a lograr todo lo que me proponga,
+porque mi creador me trajo hasta aquí y todo se está dando sin dificultad.
+Mi matrimonio y mi familia están súper excelentes.
+    `,
+    valores: [
+        "Fe",
+        "Determinación",
+        "Familia",
+        "Crecimiento profesional"
+    ]
+};
+
+// Función para mostrar el mensaje
+function mostrarMensaje() {
+    console.log("=== Proyecto Personal ===");
+    console.log(`Profesión: ${proyectoPersonal.profesion}`);
+    console.log(`País: ${proyectoPersonal.pais}`);
+    console.log("\nMensaje personal:");
+    console.log(proyectoPersonal.mensaje);
+
+    console.log("\nValores que lo acompañan:");
+    proyectoPersonal.valores.forEach((valor, index) => {
+        console.log(`${index + 1}. ${valor}`);
+    });
+}
+
+// Ejecutar función
+mostrarMensaje();
